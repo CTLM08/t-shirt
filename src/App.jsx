@@ -7,8 +7,8 @@ import white from "./assets/white.webp"
 
 export const App = () => {
   return (
-    <div className='bg-blue-300 h-screen w-full flex items-center justify-center shadow-xl'>
-      <div className='bg-white w-auto h-96 rounded-xl relative'>
+    <div className='bg-blue-300 h-screen w-full flex items-center justify-center'>
+      <div className='bg-white w-auto h-96 rounded-xl relative shadow-xl'>
         <div className='flex'>
         <img src={shirt} className="w-96 rounded-xl object-cover p-5"></img>
         <div className=''>
