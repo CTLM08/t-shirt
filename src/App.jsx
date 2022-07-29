@@ -14,7 +14,7 @@ export const App = () => {
         <div className=''>
           <div className='p-5'>
            
-        <div className=' font-semibold text-base md:text-xl '>T-shirt(ORICON STORE)</div>
+        <div className=' font-semibold text-base md:text-xl text-black'>T-shirt(ORICON STORE)</div>
          <div className=' right-auto font-bold text-slate-600'>$187</div>
          <div className='flex flex-row mt-2'>{Array(5).fill(0).map(()=><Icon icon="emojione:glowing-star" className='h-4 w-2 md:h-6 md:w-6 '/>)}<span className='text-slate-600 font-bold'>(87)</span></div>
          <div className='mt-3 font-mono'>choose the color</div>
