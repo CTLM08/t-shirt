@@ -4,6 +4,7 @@ import { Icon } from '@iconify/react';
 import black from "./assets/black.jfif"
 import white from "./assets/white.webp"
 
+
 export const App = () => {
   return (
     <div className='bg-blue-300 h-screen w-full flex items-center justify-center'>
