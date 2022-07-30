@@ -1,14 +1,16 @@
-import React from "react";
+import React ,{ useState }from "react";
 import shirt from "./assets/shirtbg.png";
 import { Icon } from "@iconify/react";
 import black from "./assets/black.jfif";
 import white from "./assets/white.webp";
 const color=['xxs','xs','s','m']
+const outline=['outline-black']
 const color2=['l','xl','xxl','xxl']
 export const App = () => {
   return (
-    <div className="bg-blue-300 h-screen w-full flex items-center justify-center">
-      <div className="bg-white w-auto h-64 md:h-96 rounded-xl relative shadow-xl">
+    <div className="bg-gray-300 h-screen w-full flex items-center justify-center">
+      <div className="bg-white w-auto h-64 md:h-96 rounded-md relative shadow-xl">
+
         <div className="flex">
           <img
             src={shirt}
@@ -28,10 +30,10 @@ export const App = () => {
                   .map(() => (
                     <Icon
                       icon="emojione:glowing-star"
-                      className="h-4 w-2 md:h-6 md:w-6 "
+                      className="h-4 w-2 md:h-5 md:w-5 "
                     />
                   ))}
-                <span className="text-slate-600 font-bold text-xs md:text-base">
+                <span className="text-slate-600 font-bold text-xs md:text-sm">
                   (87)
                 </span>
               </div>
@@ -49,13 +51,13 @@ export const App = () => {
               </div>
               <div className="md:mt-3 font-mono text-xs md:text-base">
                 <span>choose the size</span>
-                <div className="flex flex-rows gap-2 md:mt-3">{color.map((item)=>(
-                  <div className="text-center rounded-md bg-blue-300 text-white w-8 h-6 md:w-12 md:h-8  hover:animate-bounce text-xs md:text-base">{item}</div>
+                <div className="flex flex-rows gap-2.5 md:mt-3">{color.map((item)=>(
+                  <div className="text-center rounded-md bg-slate-400 text-white w-8 h-6 md:w-12 md:h-8  hover:animate-bounce text-xs md:text-base flex justify-center items-center  " >{item}</div>
                 ))}</div>
-                <div className="mt-1 md:mt-2 flex flex-rows gap-2 ">
+                <div className="mt-1 md:mt-2 flex flex-rows gap-2.5 ">
                   {
                     color2.map((item)=>(
-                      <div className="text-center rounded-md bg-blue-300 text-white  w-8 h-6 md:w-12 md:h-8 hover:animate-bounce text-xs md:text-base">{item}</div>
+                      <div className="text-center rounded-md bg-slate-400 text-white  w-8 h-6 md:w-12 md:h-8 hover:animate-bounce text-xs md:text-base flex justify-center items-center">{item}</div>
                     ))
                   }
                 </div>
@@ -63,13 +65,13 @@ export const App = () => {
               </div>
               
               <div className="mt-1  ">
-                <button className=" bg-indigo-700 rounded-lg text-white md:mt-8 w-36 md:w-48 h-8 hover:animate-bounce">
+                <button className=" bg-slate-600 rounded-md text-white md:mt-8 w-36 md:w-56 h-8 hover:animate-bounce">
                   add to bag
                 </button>
               </div>
               <div className="absolute top-0 right-1">
                 <Icon
-                  icon="material-symbols:cancel-outline-rounded"
+                  icon="iconoir:cancel"
                   className="h-4 w-4 md:h-6 md:w-6"
                 />
               </div>
