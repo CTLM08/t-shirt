@@ -50,12 +50,12 @@ export const App = () => {
               <div className="md:mt-3 font-mono text-xs md:text-base">
                 <span>choose the size</span>
                 <div className="flex flex-rows gap-2 md:mt-3">{color.map((item)=>(
-                  <div className="text-center rounded-md bg-blue-300 text-white w-6 h-6 md:w-12 md:h-8  hover:animate-bounce text-xs md:text-base">{item}</div>
+                  <div className="text-center rounded-md bg-blue-300 text-white w-8 h-6 md:w-12 md:h-8  hover:animate-bounce text-xs md:text-base">{item}</div>
                 ))}</div>
-                <div className="md:mt-2 flex flex-rows gap-2 ">
+                <div className="mt-1 md:mt-2 flex flex-rows gap-2 ">
                   {
                     color2.map((item)=>(
-                      <div className="text-center rounded-md bg-blue-300 text-white  w-6 h-6 md:w-12 md:h-8 hover:animate-bounce text-xs md:text-base">{item}</div>
+                      <div className="text-center rounded-md bg-blue-300 text-white  w-8 h-6 md:w-12 md:h-8 hover:animate-bounce text-xs md:text-base">{item}</div>
                     ))
                   }
                 </div>
