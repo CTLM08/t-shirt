@@ -41,11 +41,11 @@ export const App = () => {
                 choose the color
               </div>
               <div className="">
-                <button className=" rounded-full w-8 h-8 hover:animate-bounce">
+                <button type="button" className=" rounded-full w-8 h-8 focus:ring-2 focus:outline-none focus:ring-slate-300 dark:focus:ring-slate-600 ">
                   <Icon icon="emojione:black-circle" className="h-8 w-8" />
                 </button>
                 <span> </span>
-                <button className="w-8 hover:animate-bounce">
+                <button type="button " className="w-8 h-8 rounded-full focus:ring-2 focus:outline-none focus:ring-slate-300 dark:focus:ring-slate-600  ">
                   <Icon icon="twemoji:green-circle" className="w-8 h-8" />
                 </button>
               </div>
