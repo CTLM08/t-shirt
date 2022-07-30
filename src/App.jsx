@@ -52,12 +52,13 @@ export const App = () => {
               <div className="md:mt-3 font-mono text-xs md:text-base">
                 <span>choose the size</span>
                 <div className="flex flex-rows gap-2.5 md:mt-3">{color.map((item)=>(
-                  <div className="hover:bg-slate-500 text-center rounded-md bg-slate-400 text-white w-8 h-6 md:w-12 md:h-8   text-xs md:text-base flex justify-center items-center  " >{item}</div>
+                  
+                    <div className="hiddden:peer"><button type="button" className="hover:bg-slate-500 text-center rounded-md bg-slate-400 text-white w-8 h-6 md:w-12 md:h-8   text-xs md:text-base flex justify-center items-center  focus:ring-2 focus:outline-none focus:ring-slate-300 dark:focus:ring-slate-600  " tabindex="0">{item}</button></div>
                 ))}</div>
                 <div className="mt-1 md:mt-2 flex flex-rows gap-2.5 ">
                   {
                     color2.map((item)=>(
-                      <div className="text-center rounded-md hover:bg-slate-500 bg-slate-400 text-white  w-8 h-6 md:w-12 md:h-8  text-xs md:text-base flex justify-center items-center">{item}</div>
+                      <div><button type="button" className="text-center rounded-md hover:bg-slate-500 bg-slate-400 text-white  w-8 h-6 md:w-12 md:h-8  text-xs md:text-base flex justify-center items-center focus:ring-2 focus:outline-none focus:ring-slate-300 dark:focus:ring-slate-600">{item}</button></div>
                     ))
                   }
                 </div>
