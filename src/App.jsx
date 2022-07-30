@@ -41,24 +41,24 @@ export const App = () => {
                 choose the color
               </div>
               <div className="">
-                <button type="button" className=" rounded-full w-8 h-8 focus:ring-2 focus:outline-none focus:ring-slate-300 dark:focus:ring-slate-600 ">
-                  <Icon icon="emojione:black-circle" className="h-8 w-8" />
+                <button type="button" className=" rounded-full  focus:ring-2 focus:outline-none focus:ring-slate-300 dark:focus:ring-slate-600 ">
+                  <Icon icon="emojione:black-circle" className="h-6 w-6 md:h-8 md:w-8" />
                 </button>
                 <span> </span>
                 <button type="button " className="w-8 h-8 rounded-full focus:ring-2 focus:outline-none focus:ring-slate-300 dark:focus:ring-slate-600  ">
-                  <Icon icon="twemoji:green-circle" className="w-8 h-8" />
+                  <Icon icon="twemoji:green-circle" className="h-6 w-6 md:h-8 md:w-8" />
                 </button>
               </div>
               <div className="md:mt-3 font-mono text-xs md:text-base">
                 <span>choose the size</span>
-                <div className="flex flex-rows gap-2.5 md:mt-3">{color.map((item)=>(
+                <div className="flex flex-rows gap-1 md:gap-2.5 md:mt-3">{color.map((item)=>(
                   
-                    <div className="hiddden:peer"><button type="button" className="hover:bg-slate-500 text-center rounded-md bg-slate-400 text-white w-8 h-6 md:w-12 md:h-8   text-xs md:text-base flex justify-center items-center  focus:ring-2 focus:outline-none focus:ring-slate-300 dark:focus:ring-slate-600  " tabindex="0">{item}</button></div>
+                    <div className="hiddden:peer"><button type="button" className="hover:bg-slate-500 text-center rounded-md bg-slate-400 text-white w-6 h-5 md:w-12 md:h-8   text-xs md:text-base flex justify-center items-center  focus:ring-2 focus:outline-none focus:ring-slate-300 dark:focus:ring-slate-600  " tabindex="0">{item}</button></div>
                 ))}</div>
-                <div className="mt-1 md:mt-2 flex flex-rows gap-2.5 ">
+                <div className="mt-1 md:mt-2 flex flex-rows gap-1 md:gap-2.5 ">
                   {
                     color2.map((item)=>(
-                      <div><button type="button" className="text-center rounded-md hover:bg-slate-500 bg-slate-400 text-white  w-8 h-6 md:w-12 md:h-8  text-xs md:text-base flex justify-center items-center focus:ring-2 focus:outline-none focus:ring-slate-300 dark:focus:ring-slate-600">{item}</button></div>
+                      <div><button type="button" className="text-center rounded-md hover:bg-slate-500 bg-slate-400 text-white  w-6 h-5 md:w-12 md:h-8  text-xs md:text-base flex justify-center items-center focus:ring-2 focus:outline-none focus:ring-slate-300 dark:focus:ring-slate-600">{item}</button></div>
                     ))
                   }
                 </div>
@@ -66,7 +66,7 @@ export const App = () => {
               </div>
               
               <div className="mt-1  ">
-                <button className=" bg-slate-600 rounded-md text-white md:mt-8 w-36 md:w-56 h-8 hover:animate-bounce ">
+                <button className=" bg-slate-600 rounded-md text-white md:mt-8 w-28 md:w-56 h-6 md:h-8 hover:animate-bounce text-xs md:text-base">
                   add to bag
                 </button>
               </div>
