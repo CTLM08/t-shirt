@@ -8,7 +8,7 @@ const outline = ["outline-black"];
 const color2 = ["l", "xl", "xxl", "xxl"];
 export const App = () => {
   return (
-    <div className="bg-gray-300 h-screen w-full flex items-center justify-center">
+    <div className="bg-gray-300 h-screen w-full flex items-center justify-center dark:bg-slate-800">
       <div className="bg-white   w-auto h-auoto  md:h-96 rounded-md relative shadow-xl">
         <div className="md:flex">
           <img
@@ -17,7 +17,7 @@ export const App = () => {
           ></img>
           <div className="">
             <div className="p-3 md:p-5">
-              <div className=" font-semibold text-xl  md:text-2xl text-black">
+              <div className=" font-bold text-xl  md:text-2xl text-black">
                 T-shirt(ORICON STORE)
               </div>
               <div className=" right-auto font-bold text-slate-600 text-base md:text-xl">
