@@ -8,7 +8,9 @@ const outline = ["outline-black"];
 const color2 = ["l", "xl", "xxl", "xxl"];
 export const App = () => {
   return (
-    <div className="bg-gray-300 h-screen w-full flex items-center justify-center dark:bg-slate-800">
+    <div className="bg-gray-300 h-screen w-full flex items-center justify-center  relative " id="bg">
+      <div className="absolute top-2 right-3"><a href="https://react-learning-ochre-one.vercel.app/"><button><Icon icon="bi:apple" className="w-8 h-8 text-rose-300" /></button></a></div>
+
       <div className="bg-white   w-auto h-auoto  md:h-96 rounded-md relative shadow-xl">
         <div className="md:flex">
           <img
@@ -100,6 +102,7 @@ export const App = () => {
                   icon="iconoir:cancel"
                   className="h-6 w-6"
                 />
+                
               </div>
             </div>
           </div>
